@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		480D98E921FB1075006F0DDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480D98E821FB1075006F0DDB /* AppDelegate.swift */; };
+		480D98EB21FB1075006F0DDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480D98EA21FB1075006F0DDB /* ViewController.swift */; };
+		480D98F021FB107A006F0DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 480D98EF21FB107A006F0DDB /* Assets.xcassets */; };
+		480D98F321FB107A006F0DDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 480D98F121FB107A006F0DDB /* LaunchScreen.storyboard */; };
+		489C85442204ABFF005D9C9B /* JsonRpcConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C85432204ABFF005D9C9B /* JsonRpcConnection.swift */; };
+		489C85482209C4C6005D9C9B /* JsonRpcException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C85472209C4C6005D9C9B /* JsonRpcException.swift */; };
+		489C854A2209C53A005D9C9B /* JsonRpcDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C85492209C53A005D9C9B /* JsonRpcDispatcher.swift */; };
+		489C8557220B7ED9005D9C9B /* NetworkProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C854B2209DD25005D9C9B /* NetworkProxy.swift */; };
+		489C8558220B7ED9005D9C9B /* NetworkProxyConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C854D2209DD2F005D9C9B /* NetworkProxyConnection.swift */; };
+		489C8559220B7ED9005D9C9B /* NetworkProxyRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C854F2209DD3B005D9C9B /* NetworkProxyRunner.swift */; };
+		489C855A220B7ED9005D9C9B /* TokenBucketRateLimiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488CBFC5220B042E00DA7FFC /* TokenBucketRateLimiter.swift */; };
+		9585EC14096E32B22F69ED48 /* libPods-PoplapayTerminalSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DA5BD669C65833D8F78511 /* libPods-PoplapayTerminalSDK.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B636AC94161F61A57AA8424 /* Pods-PoplapayTerminalSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoplapayTerminalSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoplapayTerminalSDK/Pods-PoplapayTerminalSDK.release.xcconfig"; sourceTree = "<group>"; };
+		480D98E521FB1075006F0DDB /* PoplapayTerminalSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoplapayTerminalSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		480D98E821FB1075006F0DDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		480D98EA21FB1075006F0DDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		480D98EF21FB107A006F0DDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		480D98F221FB107A006F0DDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		480D98F421FB107A006F0DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		488CBFC5220B042E00DA7FFC /* TokenBucketRateLimiter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenBucketRateLimiter.swift; sourceTree = "<group>"; };
+		489C85432204ABFF005D9C9B /* JsonRpcConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonRpcConnection.swift; sourceTree = "<group>"; };
+		489C85472209C4C6005D9C9B /* JsonRpcException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonRpcException.swift; sourceTree = "<group>"; };
+		489C85492209C53A005D9C9B /* JsonRpcDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonRpcDispatcher.swift; sourceTree = "<group>"; };
+		489C854B2209DD25005D9C9B /* NetworkProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProxy.swift; sourceTree = "<group>"; };
+		489C854D2209DD2F005D9C9B /* NetworkProxyConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProxyConnection.swift; sourceTree = "<group>"; };
+		489C854F2209DD3B005D9C9B /* NetworkProxyRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProxyRunner.swift; sourceTree = "<group>"; };
+		C5DA5BD669C65833D8F78511 /* libPods-PoplapayTerminalSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PoplapayTerminalSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1496ECE90A040E95E859CE5 /* Pods-PoplapayTerminalSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoplapayTerminalSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoplapayTerminalSDK/Pods-PoplapayTerminalSDK.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		480D98E221FB1075006F0DDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9585EC14096E32B22F69ED48 /* libPods-PoplapayTerminalSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		480D98DC21FB1075006F0DDB = {
+			isa = PBXGroup;
+			children = (
+				480D98E721FB1075006F0DDB /* PoplapayTerminalSDK */,
+				480D98E621FB1075006F0DDB /* Products */,
+				5FD84974D864900F31D9525E /* Pods */,
+				8E39754EE92F6EA5A02EB6D5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		480D98E621FB1075006F0DDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				480D98E521FB1075006F0DDB /* PoplapayTerminalSDK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		480D98E721FB1075006F0DDB /* PoplapayTerminalSDK */ = {
+			isa = PBXGroup;
+			children = (
+				489C85432204ABFF005D9C9B /* JsonRpcConnection.swift */,
+				489C85492209C53A005D9C9B /* JsonRpcDispatcher.swift */,
+				489C85472209C4C6005D9C9B /* JsonRpcException.swift */,
+				489C854B2209DD25005D9C9B /* NetworkProxy.swift */,
+				489C854D2209DD2F005D9C9B /* NetworkProxyConnection.swift */,
+				489C854F2209DD3B005D9C9B /* NetworkProxyRunner.swift */,
+				488CBFC5220B042E00DA7FFC /* TokenBucketRateLimiter.swift */,
+				4893F86E21FF1EB5007ED978 /* App */,
+			);
+			path = PoplapayTerminalSDK;
+			sourceTree = "<group>";
+		};
+		4893F86E21FF1EB5007ED978 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				480D98E821FB1075006F0DDB /* AppDelegate.swift */,
+				480D98EA21FB1075006F0DDB /* ViewController.swift */,
+				480D98EF21FB107A006F0DDB /* Assets.xcassets */,
+				480D98F121FB107A006F0DDB /* LaunchScreen.storyboard */,
+				480D98F421FB107A006F0DDB /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5FD84974D864900F31D9525E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1496ECE90A040E95E859CE5 /* Pods-PoplapayTerminalSDK.debug.xcconfig */,
+				1B636AC94161F61A57AA8424 /* Pods-PoplapayTerminalSDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E39754EE92F6EA5A02EB6D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5DA5BD669C65833D8F78511 /* libPods-PoplapayTerminalSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		480D98E421FB1075006F0DDB /* PoplapayTerminalSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 480D98F721FB107A006F0DDB /* Build configuration list for PBXNativeTarget "PoplapayTerminalSDK" */;
+			buildPhases = (
+				19E05A24BC23D6809446D7C2 /* [CP] Check Pods Manifest.lock */,
+				480D98E121FB1075006F0DDB /* Sources */,
+				480D98E221FB1075006F0DDB /* Frameworks */,
+				480D98E321FB1075006F0DDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PoplapayTerminalSDK;
+			productName = TestNetworkProxy;
+			productReference = 480D98E521FB1075006F0DDB /* PoplapayTerminalSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		480D98DD21FB1075006F0DDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Poplapay;
+				TargetAttributes = {
+					480D98E421FB1075006F0DDB = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 480D98E021FB1075006F0DDB /* Build configuration list for PBXProject "PoplapayTerminalSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 480D98DC21FB1075006F0DDB;
+			productRefGroup = 480D98E621FB1075006F0DDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				480D98E421FB1075006F0DDB /* PoplapayTerminalSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		480D98E321FB1075006F0DDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				480D98F321FB107A006F0DDB /* LaunchScreen.storyboard in Resources */,
+				480D98F021FB107A006F0DDB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19E05A24BC23D6809446D7C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PoplapayTerminalSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		480D98E121FB1075006F0DDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				489C8557220B7ED9005D9C9B /* NetworkProxy.swift in Sources */,
+				489C854A2209C53A005D9C9B /* JsonRpcDispatcher.swift in Sources */,
+				489C8558220B7ED9005D9C9B /* NetworkProxyConnection.swift in Sources */,
+				489C855A220B7ED9005D9C9B /* TokenBucketRateLimiter.swift in Sources */,
+				480D98EB21FB1075006F0DDB /* ViewController.swift in Sources */,
+				489C85442204ABFF005D9C9B /* JsonRpcConnection.swift in Sources */,
+				480D98E921FB1075006F0DDB /* AppDelegate.swift in Sources */,
+				489C8559220B7ED9005D9C9B /* NetworkProxyRunner.swift in Sources */,
+				489C85482209C4C6005D9C9B /* JsonRpcException.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		480D98F121FB107A006F0DDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				480D98F221FB107A006F0DDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		480D98F521FB107A006F0DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		480D98F621FB107A006F0DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		480D98F821FB107A006F0DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1496ECE90A040E95E859CE5 /* Pods-PoplapayTerminalSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZM7D236RL2;
+				INFOPLIST_FILE = "$(SRCROOT)/PoplapayTerminalSDK/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.poplapay.TestNetworkProxy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		480D98F921FB107A006F0DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B636AC94161F61A57AA8424 /* Pods-PoplapayTerminalSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZM7D236RL2;
+				INFOPLIST_FILE = "$(SRCROOT)/PoplapayTerminalSDK/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.poplapay.TestNetworkProxy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		480D98E021FB1075006F0DDB /* Build configuration list for PBXProject "PoplapayTerminalSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				480D98F521FB107A006F0DDB /* Debug */,
+				480D98F621FB107A006F0DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		480D98F721FB107A006F0DDB /* Build configuration list for PBXNativeTarget "PoplapayTerminalSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				480D98F821FB107A006F0DDB /* Debug */,
+				480D98F921FB107A006F0DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 480D98DD21FB1075006F0DDB /* Project object */;
+}
